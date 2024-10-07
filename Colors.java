@@ -35,7 +35,6 @@ public class Colors {
         System.out.println("\nRemoved third element: " + colors);
 
         // 7.search an element in a array list
-
         boolean found = colors.contains("Ivory");
         System.out.println("\nElement is found? " + found);
 
