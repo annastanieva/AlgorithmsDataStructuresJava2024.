@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.Collections;
 
-public class ArrayList {
+public class Colors {
     public static void main(String[] args) {
         // 1.create a new array list, add some colors (string) and print out the collection
-        java.util.ArrayList<String> colors = new java.util.ArrayList<>();
+        ArrayList<String> colors = new ArrayList<>();
         colors.add("Red");
         colors.add("Violet");
         colors.add("Ivory");
@@ -30,28 +31,29 @@ public class ArrayList {
         System.out.println("\nUpdated: " + colors);
 
         // 6.remove the third element from a array list
-        colors.remove(3);
+        colors.remove(2);
         System.out.println("\nRemoved third element: " + colors);
 
         // 7.search an element in a array list
-        String searchColor = "Ivory";
-        boolean found = colors.contains(searchColor);
-        System.out.println("\nElement '" + searchColor + "' is found? " + found);
+
+        boolean found = colors.contains("Ivory");
+        System.out.println("\nElement is found? " + found);
 
         // 8.sort a given array list
         Collections.sort(colors);
         System.out.println("\nSorted: " + colors);
 
         // 9.copy one array list into another
-        java.util.ArrayList<String> copyColors = new java.util.ArrayList<>(colors);
-        System.out.println("\nCopy: " + copyColors);
+        ArrayList<String> newcolors;
+        newcolors = colors;
+        System.out.println("\nCopied: " + newcolors);
 
         // 10. reverse elements in a array list
         Collections.reverse(colors);
         System.out.println("\nReversed: " + colors);
 
         // 11. compare two array lists
-        boolean areEqual = colors.equals(copyColors);
+        boolean areEqual = colors.equals(newcolors);
         System.out.println("\nComparing: " + areEqual);
 
         //14. increase the size of an array list
