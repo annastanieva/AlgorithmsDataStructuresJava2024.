@@ -10,7 +10,7 @@ public class Colors {
         colors.add("Ivory");
         colors.add("Black");
         colors.add("White");
-        System.out.println("Colors: " + colors);
+        System.out.println(" Colors: " + colors);
 
         // 2. iterate through all elements in a array list
         System.out.println("\nIterated elements: ");
