@@ -10,7 +10,7 @@ class Solution {
         ListNode cur = head;
 
         while (list1 != null && list2 != null) {
-            if (list1.val <= list2.val) {
+            if (list1.getVal() <= list2.getVal()) {
                 cur.next = list1;
                 list1 = list1.next;
             }
