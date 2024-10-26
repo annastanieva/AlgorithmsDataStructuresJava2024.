@@ -12,11 +12,6 @@ final class ListNode {
         return val;
     }
 
-    public ListNode getNext() {
-        return next;
-    }
-
-
     private boolean isEmpty = true;
 
 
