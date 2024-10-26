@@ -1,20 +1,29 @@
 package LinkedList;
-public class ListNode {
-    int val;
+final class ListNode {
+    private final int val;
     ListNode next;
 
-    private boolean isEmpty = true;
-    ListNode() {}
-
-    ListNode(int val) {
-        this.val = val;
-        isEmpty = false;
+    public ListNode() {
+        this.val = 0;
+        this.next = null;
     }
+
+    public int getVal() {
+        return val;
+    }
+
+    public ListNode getNext() {
+        return next;
+    }
+
+
+    private boolean isEmpty = true;
+
 
     ListNode(int val, ListNode next) {
         this.val = val;
-        this.next = next;
         isEmpty = false;
+        this.next = next;
     }
 
     @Override
@@ -36,3 +45,4 @@ public class ListNode {
         return list.toString();
     }
 }
+
